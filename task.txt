@@ -1,0 +1,11 @@
+- book api example
+  - get list of books (title and author)
+  - add book
+  - update book
+  - delete book
+- deployment to OpenShift
+- helm as kubernetes package manager
+- code on github
+- github actions for image building
+- rollout via helm cli
+- eventually: rollout via ArgoCD
