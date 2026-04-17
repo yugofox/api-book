@@ -1,0 +1,24 @@
+replicaCount: 1
+
+image:
+  repository: yugofox/api-book
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 8000
+
+autoscaling:
+  enabled: false
+
+serviceAccount:
+  create: true
+  automount: true
+  annotations: {}
+  name: ""
+
+httpRoute:
+  enabled: false
